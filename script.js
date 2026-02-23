@@ -131,7 +131,27 @@ let jobs = [
     },
   ];
   
+  //STATUS UPDATE 
+  function updateStatus(id, newStatus) {
+    jobs.forEach(job => {
+      if (job.id === id) job.status = newStatus;
+    });
+    renderJobs();
+  }
+    // Statues Btn Design
+  function getStatus(status) {
+    if (status === "interview")
+      return "bg-green-100 text-green-600";
+    if (status === "rejected")
+      return "bg-red-100 text-red-600";
+    return "bg-blue-100 py-2";
+  }
 
+  //Delete button work
+  function deleteJob(id) {
+    jobs = jobs.filter(job => job.id !== id);
+    renderJobs();
+  }
 
 
 
