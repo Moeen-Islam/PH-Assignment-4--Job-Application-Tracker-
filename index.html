@@ -44,6 +44,35 @@
 
   <hr class=" max-w-[80%] mx-auto text-[#E6E7E9] my-[30px]">
 
+    <!-- HEADER + FILTER -->
+   <div class="max-w-[80%] mx-auto mb-8">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="font-bold text-xl text-[#002C5C]">Available Jobs</h2>
+        <div>
+            <p class="text-sm text-[#64748B]">
+             <span id="visibleCount">0</span> jobs
+             </p>
+        </div>
+  </div>
+        <div class="flex gap-2">
+            <button id="filter-all" onclick="setFilter('all')" class="w-[120px] px-8 py-2 rounded cursor-pointer bg-blue-500 text-white text-center">
+              All
+            </button>
+
+            <button id="filter-interview" onclick="setFilter('interview')" class="w-[120px] px-8 py-2 rounded cursor-pointer text-gray-500 text-center">
+              Interview
+            </button>
+
+            <button id="filter-rejected" onclick="setFilter('rejected')" class="w-[120px] px-8 py-2 rounded cursor-pointer text-gray-500 text-center">
+              Rejected
+            </button>
+          </div>
+
+   </div>
+  
+ 
+
+
 
    
 <script src="./script.js"></script>
