@@ -141,9 +141,9 @@ let jobs = [
     // Statues Btn Design
   function getStatus(status) {
     if (status === "interview")
-      return "bg-green-100 text-green-600";
+      return "bg-green-100 text-green-600 py-2 text-[12px]";
     if (status === "rejected")
-      return "bg-red-100 text-red-600";
+      return "bg-red-100 text-red-600 py-2 text-[12px]";
     return "bg-blue-100 py-2";
   }
 
